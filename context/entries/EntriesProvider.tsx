@@ -14,26 +14,7 @@ interface Props {
 
 
 const ENTRIES_INITIAL_STATE: EntriesState = {
-    entries: [
-        {
-            _id: uuidv4(),
-            description: 'Pending: Complete - Support for RFC4122 version 1, 3, 4, and 5 UUIDs',
-            status: 'pending',
-            createdAt: Date.now(),
-        },
-        {
-            _id: uuidv4(),
-            description: 'In-progress: Secure - Cryptographically-strong random values',
-            status: 'in-progress',
-            createdAt: Date.now() - 10000,
-        },
-        {
-            _id: uuidv4(),
-            description: 'Finished: Upgrading from uuid@3? Your code is probably okay, but check out Upgrading From uuid@3 for details.',
-            status: 'finished',
-            createdAt: Date.now() - 100000,
-        }
-    ],
+    entries: [],
 }
 
 
